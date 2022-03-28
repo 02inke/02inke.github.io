@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虚假的suibe</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width:1000px;
+            margin:0 auto;
+        }
+        .header{
+            background-color: aqua;
+            position: fixed;
+            width: 100%;
+            top:0;
+        }
+        .header .container{
+            background-color: rgb(99, 99, 230);
+            height: 50px;
+        }
+        .first_page{
+            float: left;
+            background-color: rgb(212, 177, 131);
+            margin-right: 10px;
+            width: 490px;
+            height:400px;
+            margin-top: 10px;
+        }
+        .main{
+            margin: 50px;
+        }
+        .second_page{
+            float:right;
+            width: 490px;
+            margin-top: 10px;
+        }
+        .left_one{
+            float: left;
+            background-color: rgb(144, 206, 185);
+            width: 240px;
+            height:400px;
+        }
+        .right_one{
+            float: right;
+            background-color: rgb(144, 206, 185);
+            width:240px;
+            height: 400px;
+        }
+        .third_page{
+            float:left;
+            width: 490px;
+            margin-top: 10px;
+        }
+        .forth_page{
+            float: right;
+            background-color: rgb(212, 177, 131);
+            width: 490px;
+            height:400px;
+            margin-top: 10px;
+        }
+        .line1_left{
+            float: left;
+            background-color: blueviolet;
+            width: 490px;
+            height: 80px;
+            margin-top: 10px;
+        }
+        .line1_right{
+            float: right;
+            background-color: blueviolet;
+            width: 490px;
+            height: 80px;
+            margin-top: 10px;
+        }
+        .no1{
+            float: left;
+            background-color: rgb(199, 150, 91);
+            width: 320px;
+            height: 400px;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        .no2{
+            float: left;
+            background-color: rgb(199, 150, 91);
+            width: 320px;
+            height: 400px;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        .no3{
+            float: right;
+            background-color: rgb(199, 150, 91);
+            width: 320px;
+            height: 400px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .footer{
+            clear: both;
+            background-color: darkkhaki;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container"></div>
+    </div>
+    <div class="main">
+        <div class="container" id="up">
+            <div class="first_page"></div>
+            <div class="second_page">
+                <div class="left_one"></div>
+                <div class="right_one"></div>
+            </div>
+            <div class="third_page">
+                <div class="left_one"></div>
+                <div class="right_one"></div>
+            </div>
+            <div class="forth_page"></div>
+        </div>
+        <div class="container" id="mid">
+            <div class="line1_left"></div>
+            <div class="line1_right"></div>
+            <div class="line1_left"></div>
+            <div class="line1_right"></div>
+            <div class="line1_left"></div>
+            <div class="line1_right"></div>
+            <div class="line1_left"></div>
+            <div class="line1_right"></div>
+        </div>
+        <div class="container" id="down">
+            <div class="no1"></div>
+            <div class="no2"></div>
+            <div class="no3"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container"></div>
+    </div>
+</body>
+</html>
