@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/ali.ico">
+    <title>简历</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            flex-direction: column;
+            background-image: url(img/bg.jpg);
+            width: 1000px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 5px #888888;
+        }
+
+        div {
+            display: flex;
+        }
+
+        .personal_information {
+            width: 1000px;
+            background-image: url(img/RCg.jpg);
+            height: 250px;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .name {
+            width: 300px;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .cat {
+            margin-left: 50px;
+        }
+
+        .detail {
+            width: 500px;
+            margin-bottom: 40px;
+        }
+
+        .education {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        table {
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .left {
+            border-radius: 50%;
+            background-color: rgb(96, 96, 202);
+            width: 65px;
+            height: 65px;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: aliceblue;
+            box-shadow: 10px 10px 5px #888888;
+        }
+        .left:hover{
+            background-color: rgb(51, 233, 90);
+            color: blue;
+            transition: 2s;
+        }
+        .right {
+            width: 930px;
+            height: 75px;
+            justify-content: flex-end;
+        }
+
+        .right .line {
+            width: 900px;
+            height: 2.5px;
+            background-color: blue;
+            margin: auto;
+            box-shadow: 5px 5px 5px #888888;
+        }
+        .line:hover{
+            background-color: black;
+            height: 5px;
+        }
+        .box {
+            width: 920px;
+            flex-direction: column;
+        }
+
+        .exp {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .exp_box {
+            background-color: bisque;
+            width: 250px;
+            height: 300px;
+        }
+
+        .rad {
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(22, 122, 122);
+        }
+        .ape1 {
+            width: 100px;
+            height: 30px;
+            margin: auto;
+        }
+        @media (max-width:900px) {
+            .exp_box{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .exp{
+                flex-direction: column;
+            }
+            .education{
+                width: auto;
+            }
+            table{
+                width: 70%;
+            }
+            .personal_information{
+                flex-direction: column;
+                height: auto;
+                margin-left: 50px;
+                background-image: url(img/RC.jpg)
+            }
+            .name{
+                width: 100%;
+                justify-content:flex-start;
+            }
+            h1{
+                width: 200px;
+                text-align: center;
+                /* text-align: left; */
+                
+            }
+            .cat{
+                margin-left: 5px;
+            }
+            .detail{
+                width: 100%;
+            }
+            .temp_box{
+                flex-direction: column;
+            }
+            .ape1{
+                width: 30%;
+                margin: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="personal_information">
+            <div class="name">
+                <h1>曾志豪</h1>
+                <br />
+                <div class="cat">
+                    <img src="img/cat.jpg" alt="图片加载失败" width="200px" />
+                </div>
+            </div>
+            <div class="detail">
+                <ul>
+                    <li>性别：男</li>
+                    <li>电话：1234567</li>
+                    <li>邮箱：username@domain.com</li>
+                    <li>生日：2022.1.1</li>
+                    <li>兴趣：...</li>
+                </ul>
+            </div>
+        </div>
+        <div class="education">
+            <div class="left">
+                <div class="rad">教育背景</div>
+            </div>
+            <div class="box">
+                <div class="right">
+                    <div class="line"></div>
+                </div>
+                <div class="down">
+                    <table>
+                        <tr>
+                            <th>时间</th>
+                            <th>学校</th>
+                            <th>职务</th>
+                        </tr>
+                        <tr>
+                            <th>22</th>
+                            <th>22</th>
+                            <th>22</th>
+                        </tr>
+                        <tr>
+                            <th>33</th>
+                            <th>33</th>
+                            <th>33</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="job">
+            <div class="left">
+                <div class="rad">工作经历</div>
+            </div>
+            <div class="box">
+                <div class="right">
+                    <div class="line"></div>
+                </div>
+                <div class="exp">
+                    <div class="exp_box">第一份工作...</div>
+                    <div class="exp_box">第二份工作...</div>
+                    <div class="exp_box">第三份工作...</div>
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+            <div class="left">
+                <div class="rad">自我评价</div>
+            </div>
+            <div class="box">
+                <div class="right">
+                    <div class="line"></div>
+                </div>
+                <ol>
+                    <li>first...</li>
+                    <li>second...</li>
+                    <li>third...</li>
+                </ol>
+            </div>
+        </div>
+        <div class="append">
+            <div class="left">
+                <div class="rad">附件</div>
+            </div>
+            <div class="box">
+                <div class="right">
+                    <div class="line"></div>
+                </div>
+
+                <div class="temp_box">
+                    <div class="ape1">
+                        <a href="form.html">表单</a>
+                    </div>
+                    <div class="ape1">
+                        <a href="suibe.html">学校官网</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+</body>
+
+</html>
